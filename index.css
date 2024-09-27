@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'genotyperegular';
+    src: url('./src/fonts/genotype.regular-webfont.woff2') format('woff2'),
+         url('./src/fonts/genotype.regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'detonate_brkregular';
+    src: url('./src/fonts/detonate-webfont.woff2') format('woff2'),
+         url('./src/fonts/detonate-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    display:flex;
+    margin:0 auto;
+    justify-content: center;
+}
+
+body > * {
+    margin: 1rem 0.6rem 2rem 0.6rem;
+    height: 90vh;
+    
+}
+
+main {
+    width: 50vw;
+    min-width: 40%;
+}
+
+article{
+    display:none;
+    border: 6px #D87085 solid;
+    border-radius: 4px;
+    border-style: double solid;
+    background-color: #fffef3;
+    height: 100%;
+}
+
+h1{
+    font-family: 'detonate_brkregular';
+    font-size: 5rem;
+    text-align: center;
+    margin: 0;
+    color: #E4FAFA;
+    -webkit-text-stroke: 0.3px #EAB2B7;
+}
+
+h2{
+    font-family: 'genotyperegular';
+    font-size: 2rem;
+    text-align: center;
+    border: 2px #DBFFED solid;
+    margin: 0.4rem 4rem 0 4rem;
+    padding-top: 0.3rem;
+    color: #EAB2B7;
+    text-shadow: -1px 1px 0 #DBFFED, 
+                1px 1px 0 #DBFFED, 
+                1px -1px 0 #DBFFED,
+                -1px -1px 0 #DBFFED;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-size: 1.4rem;
+    margin: 0 2rem 0.3rem 3.2rem;
+    color: #85bcc9;
+}
+
+div img {
+    height: 100%;
+    margin-top: 0.3rem;
+    border: 1px #CE528A solid;
+    border-radius: 3px;
+}
+
+.left{
+    width:19vw;
+    margin-left: 3rem;
+}
+
+.right {
+    width: 37%;
+    max-width: 40vw;
+}
+
+#home{
+    display:block
+}
+
+#home section {
+    border: 1px #9C94C4 solid;
+    margin: 0 1rem;
+}
+
+#disc {
+    font-size: 1.2rem;
+}
