@@ -22,13 +22,29 @@
         <div class="left">
             <nav>
                 <h3>NAVIGATION</h3>
-                <p>home</p>
-                <p>about me</p>
-                <p>interests</p>
-                <p>credits</p>
+                <div class="item" id="homeb" onclick="unhide('home')">
+                    <p>icon</p>
+                    <p>home</p>
+                </div>
+                <div class="item" id="aboutb" onclick="unhide('about')">
+                    <p>icon</p>
+                    <p>about me</p>
+                </div>
+                <div class="item" id="interestsb" onclick="unhide('interests')">
+                    <p>icon</p>
+                    <p>interests</p>
+                </div>
+                <div class="item" id="creditsb" onclick="unhide('credits')">
+                    <p>icon</p>
+                    <p>credits</p>
+                </div>
             </nav>
             <div class="gifs">
-
+                <p>gif goes here</p>
+                <p>gif goes here</p>
+                <p>gif goes here</p>
+                <p>gif goes here</p>
+                <p>gif goes here</p>
             </div>
         </div>
         <main>
@@ -110,6 +126,14 @@
         <div class="right">
             <img src="./src/img/vrt.jpeg">
         </div>
-        <script src="" async defer></script>
+        <script async defer>
+            function unhide(clickedid) {
+                let items = document.getElementsByClassName('gen');
+                for (let i = 0; i < items.length; i++){
+                    items[i].style.display = 'none';
+                }
+                document.getElementById(clickedid).style.display="block";
+            }
+        </script>
     </body>
 </html>
